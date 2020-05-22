@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "./src",
+    "jsx": "react",
+    "lib": ["dom", "esnext", "es2015", "es2016", "es2017"],
+    "moduleResolution": "node",
+    "target": "es2015",
+    "strict": true,
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "forceConsistentCasingInFileNames": true,
+
+    "allowJs": true, // Allow JavaScript files to be compiled
+    "declaration": true, // Generate corresponding .d.ts file
+    "experimentalDecorators": true // Enables experimental support for ES decorators
+  },
+  "include": ["**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules/*", "public/*"]
+}

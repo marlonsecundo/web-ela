@@ -1,3 +1,8 @@
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const path = require('path');
+
+/* eslint-disable @typescript-eslint/camelcase */
+/* eslint-disable quotes */
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
@@ -27,8 +32,21 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    `gatsby-plugin-typescript`,
+    {
+      resolve: `gatsby-plugin-typescript`,
+      options: {},
+    },
+    `gatsby-plugin-styled-components`,
+    'gatsby-plugin-root-import',
+    {
+      options: {
+        src: path.join(__dirname, 'src'),
+      },
+    },
+
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
-}
+};
