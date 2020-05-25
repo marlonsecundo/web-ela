@@ -1,10 +1,6 @@
 import React from 'react';
-import Layout from '~/components/layout';
+import HomePage from './home';
 
-const IndexPage: React.FC = () => (
-  <Layout>
-    <h1>Hi people</h1>
-  </Layout>
-);
+const IndexPage: React.FC = () => <HomePage />;
 
 export default IndexPage;

@@ -23,6 +23,7 @@
   "plugins": ["react", "@typescript-eslint"],
   "rules": {
     "import/newline-after-import": "off",
+    "import/prefer-default-export": "off",
     "react/jsx-filename-extension": "off",
     "import/extensions": [
       "error",

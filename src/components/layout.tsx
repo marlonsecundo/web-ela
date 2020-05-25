@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Header from './header';
+import Footer from './footer';
 import GlobalStyles from '../styles/global';
 
 interface Props {
@@ -22,8 +23,8 @@ const Layout: React.FC = ({ children }: Props) => {
     <>
       <GlobalStyles />
       <Header />
-      <main>{children}</main>
-      <footer />
+      {children}
+      <Footer />
     </>
   );
 };

@@ -1,10 +1,13 @@
 import { createGlobalStyle } from 'styled-components';
-
 export default createGlobalStyle`
 html {
-  height: 100%;
+  font-size: 100%;
   overflow: auto;
   box-sizing: border-box;
+  
+  height: 100%;
+  overflow-x: hidden;
+
 }
 
 * {
@@ -22,10 +25,11 @@ html {
 body {
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
-  font-family: 'Nunito', sans-serif;
+
+  height: 100%;
 }
 
-div, section, nav, a, button, form, body {
+div, section, nav, a, button, form {
   display: flex;
 }
 
@@ -38,4 +42,9 @@ a {
   text-decoration: none;
 }
 
+#gatsby-focus-wrapper, #___gatsby {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
 `;
