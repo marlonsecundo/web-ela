@@ -14,7 +14,7 @@ export const Logo = styled.div`
   justify-content: center;
 `;
 export const MenuContainer = styled.section`
-  flex: 1;
+  flex: 2;
   flex-direction: column;
   align-items: flex-end;
   padding: 1rem;
