@@ -1,5 +1,6 @@
 import React from 'react';
 import Layout from '~/components/layout';
+import Img from 'gatsby-image';
 
 import {
   Main,
@@ -26,9 +27,13 @@ import {
 import StyledButton from '~/components/button';
 import ProjectCard from '~/components/projectcard';
 
+import handsImg from '~/images/home/imagem-home.png';
+
 const Home: React.FC = () => (
   <>
-    <Background />
+    <Background>
+      <Img fixed={handsImg} />
+    </Background>
     <Layout>
       <Main>
         <LandingPage>

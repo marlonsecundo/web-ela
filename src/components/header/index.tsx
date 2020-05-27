@@ -1,4 +1,5 @@
 import React from 'react';
+import Img from 'gatsby-image';
 
 import {
   Container,
@@ -11,10 +12,12 @@ import {
   SearchContainer,
 } from './styles';
 
+import logo from '~/images/header/logo-revela.png';
+
 const Header: React.FC = () => (
   <Container>
     <Logo>
-      <h1>revELA</h1>
+      <Img fixed={logo} />
     </Logo>
     <MenuContainer>
       <TopMenu>
