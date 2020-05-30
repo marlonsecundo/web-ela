@@ -9,15 +9,16 @@ import {
   TopMenuItem,
   MenuItem,
   SearchContainer,
+  LogoContainer,
 } from './styles';
 
-import logo from '~/images/header/logo-revela.png';
+import logoRevela from '~/images/header/logo-revela.png';
 
 const Header: React.FC = () => (
   <Container>
-    <Logo>
-      <img src={logo} />
-    </Logo>
+    <LogoContainer>
+      <Logo src={logoRevela} alt="Logo Rev Ela" />
+    </LogoContainer>
     <MenuContainer>
       <TopMenu>
         <TopMenuItem>Acessibilidade</TopMenuItem>
