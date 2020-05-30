@@ -13,8 +13,15 @@ export const Background = styled.div`
   width: 100%;
   height: 100%;
   max-height: 100vh;
+  justify-content: flex-end;
 
   z-index: -1;
+`;
+
+export const Img = styled.img`
+  margin-right: 10rem;
+  min-width: 1045px;
+  min-height: 858px;
 `;
 
 export const LandingPage = styled.section`

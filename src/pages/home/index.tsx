@@ -22,13 +22,18 @@ import {
   RevElaTitle,
   RevTextContainer,
   RevElaDescription,
+  Img,
 } from './styles';
 import StyledButton from '~/components/button';
 import ProjectCard from '~/components/projectcard';
 
+import handsImg from '~/images/home/imagem-home.png';
+
 const Home: React.FC = () => (
   <>
-    <Background />
+    <Background>
+      <Img src={handsImg} alt="Imagem de Fundo, aperto de mãos" />
+    </Background>
     <Layout>
       <Main>
         <LandingPage>

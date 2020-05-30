@@ -8,17 +8,25 @@ export const Container = styled.header`
   height: ${metrics.headerHeight};
 `;
 
-export const Logo = styled.div`
+export const LogoContainer = styled.div`
   flex: 1;
   align-items: center;
   justify-content: center;
+  padding-top: 2rem;
 `;
+
+export const Logo = styled.img`
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+`;
+
 export const MenuContainer = styled.section`
-  flex: 1;
   flex-direction: column;
   align-items: flex-end;
   padding: 1rem;
   justify-content: space-between;
+  flex: 1;
 `;
 
 export const TopMenu = styled.nav`
