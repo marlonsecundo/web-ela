@@ -53,7 +53,23 @@ export const TopMenuItem = styled(MenuItem)`
   margin-right: 2rem;
 `;
 
-export const SearchContainer = styled.div`
-  width: 130px;
-  background-color: purple;
+export const SearchContainer = styled.div``;
+
+export const SearchIcon = styled.div`
+  background-color: fuchsia;
+  width: 1.8rem;
+  height: 1.8rem;
+  margin-right: 0.5rem;
+`;
+
+export const InputSearch = styled.input.attrs(() => ({
+  type: 'text',
+}))`
+  color: ${colors.primary};
+  background-color: transparent;
+  font-size: 1em;
+
+  &::placeholder {
+    color: ${colors.primary};
+  }
 `;

@@ -10,6 +10,8 @@ import {
   MenuItem,
   SearchContainer,
   LogoContainer,
+  SearchIcon,
+  InputSearch,
 } from './styles';
 
 import logoRevela from '~/images/header/logo-revela.png';
@@ -23,7 +25,10 @@ const Header: React.FC = () => (
       <TopMenu>
         <TopMenuItem>Acessibilidade</TopMenuItem>
         <TopMenuItem>Language</TopMenuItem>
-        <SearchContainer></SearchContainer>
+        <SearchContainer>
+          <SearchIcon />
+          <InputSearch placeholder="Busca" />
+        </SearchContainer>
       </TopMenu>
       <Menu>
         <MenuItem>revELA</MenuItem>
