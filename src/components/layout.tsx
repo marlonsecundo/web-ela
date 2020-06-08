@@ -6,27 +6,26 @@ import GlobalStyles from '../styles/global';
 
 interface Props {
   children?: React.ReactNode;
+  backcolor?: boolean;
 }
 
-const Layout: React.FC = ({ children }: Props) => {
-  // const data = useStaticQuery(graphql`
-  //   query SiteTitleQuery {
-  //     site {
-  //       siteMetadata {
-  //         title
-  //       }
-  //     }
-  //   }
-  // `);
+const Layout: React.FC<Props> = ({ children, backcolor }) =>
+// const data = useStaticQuery(graphql`
+//   query SiteTitleQuery {
+//     site {
+//       siteMetadata {
+//         title
+//       }
+//     }
+//   }
+// `);
 
-  return (
+  (
     <>
       <GlobalStyles />
-      <Header />
+      <Header withBackcolor={backcolor} />
       {children}
       <Footer />
     </>
   );
-};
-
 export default Layout;

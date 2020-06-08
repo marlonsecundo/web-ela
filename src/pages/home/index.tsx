@@ -27,12 +27,12 @@ import {
 import StyledButton from '~/components/button';
 import ProjectCard from '~/components/projectcard';
 
-import handsImg from '~/images/home/imagem-home.png';
+import handsImg from '~/images/home.png';
 
 const Home: React.FC = () => (
   <>
     <Background>
-      <Img src={handsImg} alt="Imagem de Fundo, aperto de mãos" />
+      <Img src={handsImg} alt="Imagem Central de Fundo, aperto de mãos" />
     </Background>
     <Layout>
       <Main>

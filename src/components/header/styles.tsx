@@ -1,11 +1,17 @@
 import styled from 'styled-components';
+import { Link } from 'gatsby';
 import { colors, metrics } from '~/styles';
 
-export const Container = styled.header`
-  display: flex;
+interface ContainerProps {
+  readonly withBackcolor?: boolean;
+}
 
-  width: 95%;
+export const Container = styled.header<ContainerProps>`
+  display: flex;
+  width: 100%;
+  padding-right: 3rem;
   height: ${metrics.headerHeight};
+  background-color: ${(props) => (props.withBackcolor ? colors.background : 'transparent')}
 `;
 
 export const LogoContainer = styled.div`
@@ -45,7 +51,7 @@ export const Menu = styled.nav`
   width: 90%;
 `;
 
-export const MenuItem = styled.a`
+export const MenuItem = styled(Link)`
   color: ${colors.primary};
 `;
 
