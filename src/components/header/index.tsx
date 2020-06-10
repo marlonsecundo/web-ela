@@ -27,8 +27,8 @@ const Header: React.FC<HeaderProps> = ({ withBackcolor }) => (
     </LogoContainer>
     <MenuContainer>
       <TopMenu>
-        <TopMenuItem to="/">Acessibilidade</TopMenuItem>
-        <TopMenuItem to="/">Language</TopMenuItem>
+        <TopMenuItem to="404">Acessibilidade</TopMenuItem>
+        <TopMenuItem to="404">Language</TopMenuItem>
         <SearchContainer>
           <SearchIcon />
           <InputSearch placeholder="Busca" />
@@ -37,9 +37,9 @@ const Header: React.FC<HeaderProps> = ({ withBackcolor }) => (
       <Menu>
         <MenuItem to="/">revELA</MenuItem>
         <MenuItem to="/about">Sobre a ELA</MenuItem>
-        <MenuItem to="/">Cuidados</MenuItem>
-        <MenuItem to="/">Projetos</MenuItem>
-        <MenuItem to="/">Contato</MenuItem>
+        <MenuItem to="404">Cuidados</MenuItem>
+        <MenuItem to="404">Projetos</MenuItem>
+        <MenuItem to="404">Contato</MenuItem>
       </Menu>
     </MenuContainer>
   </Container>

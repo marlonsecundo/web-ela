@@ -2,8 +2,6 @@ import React from 'react';
 
 import {
   Main,
-  TopLabel,
-  Title,
   Content,
   CenterContainer,
   Paragraph,
@@ -13,19 +11,17 @@ import {
   BodyInfo,
   Diagram,
   RightContainer,
-  TopContainer,
-  ShadowDiv,
 } from './styles';
 import Layout from '~/components/layout';
+import TopTitle from '~/components/toptitle';
 
 const about: React.FC = () => (
   <>
     <Layout backcolor>
-      <TopContainer>
-        <ShadowDiv />
-        <TopLabel>Home | Sobre ELA</TopLabel>
-        <Title>Sobre Esclerose Lateral Amiotrofica</Title>
-      </TopContainer>
+      <TopTitle
+        label="Home | Sobre ELA"
+        title="Sobre Esclerose Lateral Amiotrofica"
+      />
       <Main>
         <Content>
           <CenterContainer>

@@ -11,7 +11,8 @@ export const Container = styled.header<ContainerProps>`
   width: 100%;
   padding-right: 3rem;
   height: ${metrics.headerHeight};
-  background-color: ${(props) => (props.withBackcolor ? colors.background : 'transparent')}
+  background-color: ${props =>
+    props.withBackcolor ? colors.background : 'transparent'};
 `;
 
 export const LogoContainer = styled.div`
@@ -31,6 +32,7 @@ export const MenuContainer = styled.section`
   flex-direction: column;
   align-items: flex-end;
   padding: 1rem;
+  padding-bottom: 0rem;
   justify-content: space-between;
   flex: 1;
 `;
@@ -51,8 +53,15 @@ export const Menu = styled.nav`
   width: 90%;
 `;
 
-export const MenuItem = styled(Link)`
+export const MenuItem = styled(Link).attrs(props => ({
+  activeStyle: {
+    color: colors.highlight,
+    'border-bottom': `4px solid ${colors.highlight}`,
+  },
+}))`
   color: ${colors.primary};
+  border-width: 10px;
+  height: 2.2rem;
 `;
 
 export const TopMenuItem = styled(MenuItem)`
