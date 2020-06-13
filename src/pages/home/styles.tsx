@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import { colors, metrics } from '~/styles';
-
 // MAIN SECTION
 
 export const Main = styled.main`

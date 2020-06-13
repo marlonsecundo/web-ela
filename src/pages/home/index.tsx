@@ -65,6 +65,9 @@ const Home: React.FC = () => (
             <ProjectsTitle>Conheça os projetos</ProjectsTitle>
             <ProjectsMenu>
               <ProjectCard />
+              <ProjectCard />
+              <ProjectCard />
+              <ProjectCard />
             </ProjectsMenu>
             <StyledButton>Todos os Projetos</StyledButton>
           </ProjectsContainer>

@@ -5,6 +5,8 @@ export const Container = styled.section`
   width: 17rem;
   height: 20.9rem;
   flex-direction: column;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 `;
 
 export const BackgroundImage = styled.div`

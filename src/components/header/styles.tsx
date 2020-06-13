@@ -46,6 +46,7 @@ export const TopMenu = styled.nav`
   padding-left: 2rem;
   width: 100%;
   justify-content: flex-end;
+  max-height: 2.1rem;
 `;
 
 export const Menu = styled.nav`
@@ -68,13 +69,15 @@ export const TopMenuItem = styled(MenuItem)`
   margin-right: 2rem;
 `;
 
-export const SearchContainer = styled.div``;
+export const SearchContainer = styled.div`
+  height: 2rem;
+`;
 
-export const SearchIcon = styled.div`
-  background-color: fuchsia;
-  width: 1.8rem;
-  height: 1.8rem;
+export const SearchIcon = styled.img`
   margin-right: 0.5rem;
+  padding: 5px;
+  width: 2rem;
+  height: 2rem;
 `;
 
 export const InputSearch = styled.input.attrs(() => ({
@@ -83,6 +86,7 @@ export const InputSearch = styled.input.attrs(() => ({
   color: ${colors.primary};
   background-color: transparent;
   font-size: 1em;
+  height: 2rem;
 
   &::placeholder {
     color: ${colors.primary};

@@ -15,6 +15,7 @@ import {
 } from './styles';
 
 import logoRevela from '~/images/header/logo-revela.png';
+import searchIcon from '~/images/header/search.png';
 
 interface HeaderProps {
   withBackcolor?: boolean;
@@ -30,14 +31,14 @@ const Header: React.FC<HeaderProps> = ({ withBackcolor }) => (
         <TopMenuItem to="404">Acessibilidade</TopMenuItem>
         <TopMenuItem to="404">Language</TopMenuItem>
         <SearchContainer>
-          <SearchIcon />
+          <SearchIcon src={searchIcon} alt="Icone de Procura" />
           <InputSearch placeholder="Busca" />
         </SearchContainer>
       </TopMenu>
       <Menu>
         <MenuItem to="/">revELA</MenuItem>
         <MenuItem to="/about">Sobre a ELA</MenuItem>
-        <MenuItem to="404">Cuidados</MenuItem>
+        <MenuItem to="/care">Cuidados</MenuItem>
         <MenuItem to="404">Projetos</MenuItem>
         <MenuItem to="404">Contato</MenuItem>
       </Menu>
