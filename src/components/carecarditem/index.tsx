@@ -8,11 +8,11 @@ interface Props {
   title: string;
 }
 
-const carecarditem: React.FC<Props> = ({ imgSrc, imgAlt, title }) => (
+const CareCardItem: React.FC<Props> = ({ imgSrc, imgAlt, title }) => (
   <Content>
     <CardImage src={imgSrc} alt={imgAlt} />
     <CardTitle>{title}</CardTitle>
   </Content>
 );
 
-export default carecarditem;
+export default CareCardItem;

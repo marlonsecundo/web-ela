@@ -7,7 +7,7 @@ interface TopTitleProps {
   title: string;
 }
 
-const toptitle: React.FC<TopTitleProps> = ({ label, title }) => (
+const TopTitle: React.FC<TopTitleProps> = ({ label, title }) => (
   <Container>
     <ShadowDiv />
     <TopLabel>{label}</TopLabel>
@@ -15,4 +15,4 @@ const toptitle: React.FC<TopTitleProps> = ({ label, title }) => (
   </Container>
 );
 
-export default toptitle;
+export default TopTitle;

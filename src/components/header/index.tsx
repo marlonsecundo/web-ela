@@ -39,7 +39,7 @@ const Header: React.FC<HeaderProps> = ({ withBackcolor }) => (
         <MenuItem to="/">revELA</MenuItem>
         <MenuItem to="/about">Sobre a ELA</MenuItem>
         <MenuItem to="/care">Cuidados</MenuItem>
-        <MenuItem to="404">Projetos</MenuItem>
+        <MenuItem to="/projects">Projetos</MenuItem>
         <MenuItem to="404">Contato</MenuItem>
       </Menu>
     </MenuContainer>

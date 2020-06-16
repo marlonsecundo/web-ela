@@ -39,10 +39,6 @@ export const Title = styled.h1`
   line-height: 1.2rem;
 `;
 
-export const SubTitle = styled.h3`
-  color: ${colors.highlight};
-`;
-
 export const TitleContainer = styled.section`
   flex-direction: column;
   margin-left: 15rem;
@@ -115,8 +111,10 @@ export const ProjectsTitle = styled.h3`
   color: ${colors.highlight};
 `;
 
-export const ProjectsMenu = styled.section`
+export const ProjectsMenu = styled.ul`
   margin-bottom: 2rem;
+  list-style-type: none;
+  display: flex;
 `;
 
 // RevELA

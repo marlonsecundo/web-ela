@@ -6,20 +6,11 @@ export const Main = styled.main`
   display: flex;
 `;
 
-export const Paragraph = styled.p``;
-
-export const Subtitle = styled.h3`
-  color: ${colors.highlight};
-`;
-
-export const CenterContainer = styled.article`
-  width: 70%;
-  padding-right: 4rem;
-`;
-
-export const RightContainer = styled.aside`
-  flex: 1;
-  background-color: green;
+export const Article = styled.article`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 `;
 
 export const BottomContent = styled.section`

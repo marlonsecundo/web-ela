@@ -5,7 +5,6 @@ import {
   Main,
   Background,
   Title,
-  SubTitle,
   TitleContainer,
   LandingPage,
   ELAAbout,
@@ -26,6 +25,7 @@ import {
 } from './styles';
 import StyledButton from '~/components/button';
 import ProjectCard from '~/components/projectcard';
+import Subtitle from '~/components/subtitle';
 
 import handsImg from '~/images/home.png';
 
@@ -39,10 +39,10 @@ const Home: React.FC = () => (
         <LandingPage>
           <TitleContainer>
             <Title>A VIDA COM ELA</Title>
-            <SubTitle>
+            <Subtitle>
               O Portallogo reúne sed diam nonummy nibh euismod tincidunt ut para
               os portadores de Esclerose Lateral Amiotrófica
-            </SubTitle>
+            </Subtitle>
           </TitleContainer>
         </LandingPage>
         <ProjectsPage>
@@ -64,10 +64,10 @@ const Home: React.FC = () => (
           <ProjectsContainer>
             <ProjectsTitle>Conheça os projetos</ProjectsTitle>
             <ProjectsMenu>
-              <ProjectCard />
-              <ProjectCard />
-              <ProjectCard />
-              <ProjectCard />
+              <ProjectCard title="Projeto 1" />
+              <ProjectCard title="Projeto 2" />
+              <ProjectCard title="Projeto 3" />
+              <ProjectCard title="Projeto 4" />
             </ProjectsMenu>
             <StyledButton>Todos os Projetos</StyledButton>
           </ProjectsContainer>
