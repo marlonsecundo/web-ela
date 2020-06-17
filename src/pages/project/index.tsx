@@ -6,12 +6,16 @@ import {
   BackButton,
   BackIcon,
   Title,
-  Paragraph,
   Article,
+  ButtonText,
 } from './styles';
+import Paragraph from '~/components/paragraph';
+import Subtitle from '~/components/subtitle';
+
 import AsideLayout from '~/components/aside-layout';
-import { Subtitle } from '../care/styles';
 import Layout from '~/components/layout';
+
+import BackArrow from '~/images/project/arrow.png';
 
 interface Props {
   location: {
@@ -26,9 +30,10 @@ const Project: React.FC<Props> = ({ location }) => (
   <>
     <Layout backcolor>
       <Main>
-        <TopLabel />
+        <TopLabel>{`Home | Projetos | ${location.state.title}`}</TopLabel>
         <BackButton to="/projects">
-          <BackIcon />
+          <BackIcon src={BackArrow} alt="Seta Direita" />
+          <ButtonText>Todos os Projetos</ButtonText>
         </BackButton>
 
         <AsideLayout

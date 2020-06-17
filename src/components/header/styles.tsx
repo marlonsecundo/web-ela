@@ -57,7 +57,7 @@ export const Menu = styled.nav`
 export const MenuItem = styled(Link).attrs(props => ({
   activeStyle: {
     color: colors.highlight,
-    'border-bottom': `4px solid ${colors.highlight}`,
+    borderBottom: `4px solid ${colors.highlight}`,
   },
 }))`
   color: ${colors.primary};
