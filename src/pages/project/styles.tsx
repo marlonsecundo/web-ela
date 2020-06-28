@@ -42,3 +42,23 @@ export const Article = styled.article`
 export const Title = styled.h2`
   color: ${colors.highlight};
 `;
+
+export const BottomContent = styled.section`
+  padding: 2rem 15rem;
+  background-color: ${colors.highlight};
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+`;
+
+export const BottomTitle = styled.h2`
+  color: ${colors.background};
+  align-self: flex-start;
+`;
+
+export const ListContainer = styled.ul`
+  list-style-type: none;
+  flex-direction: row;
+  display: flex;
+`;
